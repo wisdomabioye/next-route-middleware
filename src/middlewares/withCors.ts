@@ -9,5 +9,9 @@ export const withCors: Middleware = async (req, params, user, next) => {
   newHeaders.set("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   newHeaders.set("Access-Control-Allow-Headers", "Content-Type,Authorization");
 
-  return new NextResponse(response.body, { ...response, headers: newHeaders });
+  return new NextResponse(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: newHeaders
+  });
 };

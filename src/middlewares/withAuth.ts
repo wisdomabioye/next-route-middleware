@@ -9,8 +9,8 @@ export const withAuth: Middleware<any, { id: string; role: string }> = async (
 ) => {
   const token = req.headers.get("authorization");
 
-  if (!token || token !== "valid-token") {
-    return NextResponse.json({ error: "Unauthorized" });
+  if (!token) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   const authedUser = { id: "123", role: "admin" };

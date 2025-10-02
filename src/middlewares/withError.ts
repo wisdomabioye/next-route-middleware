@@ -5,10 +5,13 @@ export const withError: Middleware = async (req, params, user, next) => {
   try {
     return await next(req, params, user);
   } catch (error) {
-    console.error("error", error);
+    console.error("Error:", error);
 
     return NextResponse.json(
-      { error: (error as Error).message ?? "Internal server error" },
+      {
+        error: "Internal Server Error",
+        message: (error as Error).message ?? "Internal server error"
+      },
       { status: 500 }
     );
   }
