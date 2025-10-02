@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.1...v1.0.2) (2025-10-02)
+
+
+### Bug Fixes
+
+* update tsconfig.json to exclude test files from compilation ([3d77c7c](https://github.com/wisdomabioye/next-route-middleware/commit/3d77c7c5daab7ca4deb9fe0663186f1f72ba5609))
+
 ## [1.0.1](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.0...v1.0.1) (2025-10-02)
 
 
