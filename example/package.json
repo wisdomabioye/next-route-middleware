@@ -1,0 +1,21 @@
+{
+  "name": "next-route-middleware-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.x",
+    "next-route-middleware": "file:../",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.3"
+  }
+}
