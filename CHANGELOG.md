@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.0...v1.0.1) (2025-10-02)
+
+
+### Bug Fixes
+
+* add missing files entry in package.json ([9c3a587](https://github.com/wisdomabioye/next-route-middleware/commit/9c3a58702b1eb3d459b2bd2d25386e341b72d720))
+
 # 1.0.0 (2025-10-02)
 
 
