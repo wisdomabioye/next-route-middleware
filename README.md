@@ -13,7 +13,7 @@ Easily compose middlewares (auth, error handling, logging, rate limiting, etc.) 
 
 ✅ Example middlewares available in [`src/middlewares-examples/`](./src/middlewares-examples/) for reference:
 
-- withError — catch errors and return JSON
+- withError — catch errors and return JSON.
 - withAuth — authenticate requests
 - withRateLimit — simple rate limiting
 - withCors — add CORS headers
