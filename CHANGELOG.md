@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/wisdomabioye/next-route-middleware/compare/v1.1.0...v1.1.1) (2026-01-20)
+
+
+### Bug Fixes
+
+* add repository field to package.json ([72e3925](https://github.com/wisdomabioye/next-route-middleware/commit/72e392582a442dfc3739a6fb5c8f486a98e808be))
+
 # [1.1.0](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.2...v1.1.0) (2026-01-20)
 
 
