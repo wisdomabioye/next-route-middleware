@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.2...v1.1.0) (2026-01-20)
+
+
+### Features
+
+* reorganize middleware examples and remove unused implementations ([c54c3fa](https://github.com/wisdomabioye/next-route-middleware/commit/c54c3faa96a62f8ac97bcb3959bea41d779cca75))
+
 ## [1.0.2](https://github.com/wisdomabioye/next-route-middleware/compare/v1.0.1...v1.0.2) (2025-10-02)
 
 
