@@ -11,7 +11,7 @@ Easily compose middlewares (auth, error handling, logging, rate limiting, etc.) 
 
 ✅ Works with Next.js App Router (app/ directory)
 
-✅ Example middlewares included (in `src/middlewares/`):
+✅ Example middlewares available in [`src/middlewares-examples/`](./src/middlewares-examples/) for reference:
 
 - withError — catch errors and return JSON
 - withAuth — authenticate requests
@@ -20,7 +20,7 @@ Easily compose middlewares (auth, error handling, logging, rate limiting, etc.) 
 - withCache — add cache headers
 - withLogger — log requests & responses
 
-> **Note:** The middlewares in `src/middlewares/` are example implementations to help you get started. Feel free to customize them or create your own based on your application's needs.
+> **Note:** These example middlewares are **not included in the published package**. They are provided as reference implementations to help you get started. Copy and customize them in your own project as needed.
 
 📦 Installation
 
@@ -37,13 +37,9 @@ Example Route (`app/api/hello/route.ts`)
 
 ```typescript
 import { NextRequest, NextResponse } from "next/server";
-import {
-  composeHandlers,
-  withError,
-  withAuth,
-  withRateLimit,
-  withLogger,
-} from "next-route-middleware";
+import { composeHandlers } from "next-route-middleware";
+// Import your own middlewares (see "Creating Custom Middlewares" below)
+import { withError, withAuth, withRateLimit, withLogger } from "@/middlewares";
 
 async function baseHandler(
   req: NextRequest,
@@ -61,7 +57,6 @@ export const GET = composeHandlers(
   withRateLimit,
   withAuth
 );
-
 ```
 
 ➡️ Order matters:
@@ -175,12 +170,12 @@ ___
 
 ### 📝 Roadmap
 
-- More built-in middlewares (withSession, withMetrics, etc.)
+- More example middlewares (withSession, withMetrics, etc.)
 - Better TypeScript inference for user
 - Integration tests with Next.js app/ routes
 
 ### 🤝 Contributing
-PRs welcome! Please open an issue for discussion before submitting new built-in middlewares.
+PRs welcome! Please open an issue for discussion before submitting new example middlewares or features.
 
 ### 📜 License
 MIT © 2025 — Built with ❤️ for the Next.js community
